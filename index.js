@@ -1,9 +1,9 @@
 import { menuArray } from "./data.js";
-
-function render(){
+const orderArray = [];
+function renderMenu() {
     let menuHtml = "";
     menuArray.forEach(item => {
-        menuHtml+=`
+        menuHtml += `
           <div class="menu-item">
                 <div class="item-container">
                     <img class="item-img" src="${item.img}" alt="">
@@ -13,7 +13,7 @@ function render(){
                         <p class="price">$${item.price}</p>
                     </div>
                 </div>
-                <button class="add-btn" id="add-order-btn">+</button>
+                <button class="add-btn" id="add-order-btn" data-item-id="${item.id}">+</button>
             </div>
         `
     });
@@ -21,4 +21,18 @@ function render(){
     document.getElementById("items-menu").innerHTML = menuHtml;
 }
 
-render();
+
+renderMenu();
+
+function addToOrder(itemId) {
+    const targetItem = menuArray.filter(item => item.id == itemId)[0];
+    orderArray.push(targetItem);
+
+}
+
+document.addEventListener("click", (event) => {
+    if (event.target.dataset.itemId) {
+        addToOrder(event.target.dataset.itemId);
+
+    }
+})
