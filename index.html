@@ -1,42 +1,46 @@
 <html>
-    <head>
-       <link rel="stylesheet" href="index.css">
-       <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Smythe&display=swap" rel="stylesheet">
-    </head>
-    <body>
-        <header>
-         <img src="images/header.png" alt="Restaurant Header">
-        </header>
-        <main>
-            <div class="container">
-                <div class="menu-item">
-                    <img src="images/pizza.png" alt="">
+
+<head>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Smythe&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <img src="images/header.png" alt="Restaurant Header">
+    </header>
+    <main>
+        <div class="container">
+            <div class="menu-item">
+                <div class="item-container">
+                    <img class="item-img" src="images/pizza.png" alt="">
                     <div class="item-info">
                         <h1 class="item-name">Pizza</h1>
-                        <h3 class="ingredients">pepperoni , mushrom , mozarella</h3>
+                        <p class="ingredients">pepperoni , mushrom , mozarella</p>
                         <p class="price">$14</p>
                     </div>
-                    <button class="add-btn" id="add-order-btn">+</button>
                 </div>
+                <button class="add-btn" id="add-order-btn">+</button>
             </div>
-            <div class="order-info">
-                <h1>Your Order</h1>
-                <div class="ordered-items">
-                    <div class="item-info">
-                        <h1 class="item-name">pizza</h1>
-                        <button class="remove-btn" id="remove-btn">remove</button>
-
-                    </div>
+        </div>
+        <div class="order-info">
+            <h1>Your Order</h1>
+            <div class="ordered-items">
+                <div class="item-info">
+                    <h1 class="item-name">pizza</h1>
+                    <button class="remove-btn" id="remove-btn">remove</button>
 
                 </div>
 
             </div>
-            <button class="complete-order" id="complete-order">Complete Order</button>
 
-        </main>
-	<script src="index.js"></script>
-    </body>
+        </div>
+        <button class="complete-order" id="complete-order">Complete Order</button>
+
+    </main>
+    <script src="index.js"></script>
+</body>
+
 </html>
-

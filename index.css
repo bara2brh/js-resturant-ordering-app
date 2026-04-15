@@ -2,4 +2,80 @@ body {
     margin: 0;
     text-align: center;
     font-family: "Smythe", sans-serif;
-} 
+    background: #f5f5f5;
+}
+
+main {
+    background-color: #FFFFFF;
+    width: 600px;
+    margin: auto;
+}
+
+h1 {
+    font-weight: normal;
+}
+
+.container {
+    padding: 40px;
+}
+
+/* menu item styling */
+.menu-item {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+    align-items: center;
+    border-bottom: 2px solid #D2D2D2;
+    padding-bottom: 30px;
+
+}
+
+.item-container {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    gap: 30px;
+
+}
+
+.item-img {
+    width: 80px;
+    height: 90px;
+}
+
+.item-container .item-info {
+    text-align: left;
+}
+
+.ingredients {
+    color: #8B8B8B;
+    font-size: 16px;
+    margin-top: 0px;
+    letter-spacing: 0.5pt;
+}
+
+.price {
+    font-size: 25px;
+}
+
+.item-info .item-name {
+    margin: 0 0 0 0;
+    padding: 0;
+}
+
+.add-btn {
+    cursor: pointer;
+    background-color: transparent;
+    border-radius: 50%;
+    font-size: 30px;
+    width: 50px;
+    height: 50px;
+    border: 1.5px solid #DEDEDE;
+    color: #3C3C3C;
+    font-family: serif;
+    font-weight: 300;
+}
+
+.add-btn:hover {
+    background-color: #DEDEDE;
+}
