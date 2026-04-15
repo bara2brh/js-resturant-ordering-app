@@ -16,7 +16,7 @@ h1 {
 }
 
 .container {
-    padding: 40px;
+    padding: 30px 40px;
 }
 
 /* menu item styling */
@@ -26,7 +26,8 @@ h1 {
     margin: 10px;
     align-items: center;
     border-bottom: 2px solid #D2D2D2;
-    padding-bottom: 30px;
+    padding-bottom: 20px;
+    padding-top: 20px;
 
 }
 
@@ -78,4 +79,51 @@ h1 {
 
 .add-btn:hover {
     background-color: #DEDEDE;
+}
+
+
+/* order info styling */
+
+.order-info .item-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.order-info .item-info div{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.remove-btn{
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    color: #BBBBBB;
+    margin: 0;
+    height: 10px;
+}
+.remove-btn:hover{
+    color: #ec6c6c;
+}
+
+.ordered-items{
+    border-bottom: 2px solid #393333;
+}
+.total-price{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+}
+.complete-order{
+    margin-top: 30px;
+    padding: 20px;
+    width: 100%;
+    background-color: #16DB99;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
 }
