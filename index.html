@@ -45,7 +45,16 @@
             </div>
 
         </div>
-        <button class="complete-order" id="complete-order">Complete Order</button>
+        <button class="btn-large complete-order" id="complete-order">Complete Order</button>
+   </div>
+   <div class="modal-container">
+    <div class="modal">
+        <h2>Enter Card Details</h2>
+        <input type="text"  placeholder="Enter your name" name="name" id="name-input" required>
+        <input type="number"  placeholder="Enter your card number" name="cardNumber" id="card-input" required>
+        <input type="number" placeholder="Enter CVV" name="cvv" id="cvv-input" required minlength="3" maxlength="3">
+        <button class="btn-large pay-btn" id="pay-btn">Pay</button>
+    </div>
    </div>
     </main>
     <script src="index.js"></script>
