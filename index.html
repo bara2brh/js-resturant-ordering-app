@@ -12,7 +12,7 @@
         <img src="images/header.png" alt="Restaurant Header">
     </header>
     <main>
-        <div class="container">
+        <div class="container" id="main-container">
             <div id="items-menu"></div>
      
         <div class="order-info">
@@ -28,14 +28,19 @@
 
         </div>
         <button class="btn-large complete-order" id="complete-order">Complete Order</button>
+        
    </div>
-   <div class="modal-container">
+
+
+   <div class="modal-container" id="modal-container">
     <div class="modal">
         <h2>Enter Card Details</h2>
+        <form id="modal-form" action="">
         <input type="text"  placeholder="Enter your name" name="name" id="name-input" required>
         <input type="number"  placeholder="Enter your card number" name="cardNumber" id="card-input" required>
         <input type="number" placeholder="Enter CVV" name="cvv" id="cvv-input" required minlength="3" maxlength="3">
-        <button class="btn-large pay-btn" id="pay-btn">Pay</button>
+        <button type="submit" class="btn-large pay-btn" id="pay-btn">Pay</button>
+        </form>
     </div>
    </div>
     </main>
