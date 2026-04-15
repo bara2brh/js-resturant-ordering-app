@@ -9,14 +9,29 @@ main {
     background-color: #FFFFFF;
     width: 600px;
     margin: auto;
+   
 }
 
 h1 {
     font-weight: normal;
 }
 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input{
+    padding: 20px;
+    font-size: 16px;
+    border: 1px solid #757575;
+    border-radius: 5px;
+}
+
 .container {
     padding: 30px 40px;
+    
 }
 
 /* menu item styling */
@@ -116,9 +131,11 @@ h1 {
     align-items: center;
     margin: 0;
 }
+
 .complete-order{
     margin-top: 30px;
-    padding: 20px;
+}
+.btn-large{
     width: 100%;
     background-color: #16DB99;
     color: white;
@@ -127,9 +144,38 @@ h1 {
     font-size: 20px;
     font-weight: bold;
     border-radius: 5px;
-}
+    padding: 20px;
 
-.complete-order:hover{
+}
+.btn-large:hover{
     background-color: #16DB99;
     opacity: 0.8;
+}
+
+.modal-container{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.modal{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.3);
+    width: 450px;
+    background-color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.pay-btn{
+    margin-top: 15px;
 }
